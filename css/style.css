@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    font-family: "Montserrat", serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(231, 249, 255);
+    color: black;
+    padding: 20px;
+}
+ul{
+    list-style: none;
+    color: white;
+
+}
+
+ul li{
+    display: inline;
+    margin-right: 30px ;
+    
+}
+
+ul .active{
+    color: rgb(53, 86, 97);
+}
+
+.herosection{
+    background-color:rgb(231, 249, 255) ;
+    height: max-content;
+    display: flex;
+    padding: 40px;
+    padding-bottom: 0;
+}
+
+.content{
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    gap: 30px;
+}
+
+.content h1{
+    font-size: 50px;
+    color: rgb(53, 86, 97)
+}
+
+.content button{
+    width: max-content;
+    padding-block: 10px;
+    padding-inline: 30px;
+    color: white;
+    border: none;
+    background-color: orange;
+}
+
+
+.about{
+    /* background-color:rgb(231, 249, 255) ; */
+    height: max-content;
+    display: flex;
+    padding: 40px;
+    padding-bottom: 0;
+    margin-top: 50px;
+    gap: 20px;
+    }
+
+    .about img{
+        height: 350px;
+    }
+
+    .about h1{
+        font-size: 30px;
+        color: rgb(53, 86, 97);
+    }
+
+
+.cardcontainer{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    margin: auto;
+    margin-top: -60px;
+    flex-wrap: wrap;
+}
+
+.herosection h1{
+    text-shadow: 10px 10px 5px rgb(121, 120, 120);
+}
+    .card {
+
+        width: 200px;
+        height: 200px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.421);
+        display: flex;
+        background: white;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        transition: 0.5s;
+    }
+
+    .card:hover{
+        background-color: orange;
+        margin-top: -15px;
+        color: white;
+    }
+
+    .card img{
+        transition: 0.5s;
+      
+    }
+    .card:hover img{
+        transform: rotateY(180deg);
+        filter: drop-shadow(5px 5px 2px black); 
+
+    }
+
